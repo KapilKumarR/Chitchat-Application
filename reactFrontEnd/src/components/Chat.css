@@ -1,0 +1,12 @@
+.background_image{
+    background: url("https://imgcdn.stablediffusionweb.com/2024/10/23/91437526-8593-41a7-a381-967007a91fe0.jpg");
+    height: max-content;
+    width: 100%;
+}
+#input{
+    backdrop-filter: blur(5px);
+}
+#message_area button{
+    backdrop-filter: blur(5px);
+    font-size: 20px;
+}

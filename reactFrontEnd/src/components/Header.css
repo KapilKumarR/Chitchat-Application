@@ -1,0 +1,8 @@
+#navbar{
+    font-weight: 500;
+}
+#navbar li:hover{
+    background-color: rgb(121, 5, 150);
+    color: white;
+    transition: 0.7s;
+}

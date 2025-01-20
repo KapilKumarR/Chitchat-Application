@@ -1,0 +1,6 @@
+.input_box{
+    box-shadow: 5px 5px 12px gray inset;
+    border-radius: 12px;
+    padding: 5px;
+    outline: none;
+}
