@@ -100,7 +100,7 @@ chitchat-application/
 
 ---
 
-## ✨ Upcoming Tasks 
+## ✨ pending Tasks 
 - [ ] Improve View Profile UI
 - [ ] Improve Chat interface UI
 - [ ] Improve User list UI
