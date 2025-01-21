@@ -25,8 +25,11 @@ INSTALLED_APPS = [
  
     'rest_framework',
     'corsheaders',
-    'usersApp',
+    'rest_framework_simplejwt',
+    'django_extensions',
     
+    # App sectiom
+    'usersApp',    
 ]
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # Your front-end origin
@@ -45,6 +48,15 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+    # ###########
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ]
+}
 ROOT_URLCONF = 'chatMain.urls'
 
 TEMPLATES = [

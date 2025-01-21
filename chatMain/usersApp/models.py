@@ -71,3 +71,11 @@ class Account(AbstractBaseUser):
 
     def has_module_perms(self, add_label):
         return True
+
+
+# Note model for storing token details
+
+
+class Note(models.Model):
+    description = models.CharField(max_length=300)
+    owner = models.ForeignKey(Account, on_delete=models.CASCADE, related_name="note")
